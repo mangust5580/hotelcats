@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hotelcats</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/lato.woff2" as="font">
+  <link rel="preload" href="fonts/lato.woff" as="font">
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <div class="container page-header__container">
+      <a class="logo">
+        <img class="logo__img" src="img/logo.svg" width="63" height="52" alt="Логотип сайта">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#services">Почему мы?</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#rooms">Номера</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#contacts">Как нас найти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="promo">
+      <div class="promo__info">
+        <span class="promo__location">Санкт-Петербург</span>
+        <h1 class="page-title promo__title">Котейка</h1>
+        <p class="promo__description">Уютная гостиница для котов и кошек</p>
+        <a class="btn promo__link" href="#">
+          <span class="btn__text">Забронировать</span>
+          <svg class="btn__svg promo__link-svg" width="21" height="18">
+            <use xlink:href="img/sprite.svg#icon-foot"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <h2 class="page-title services__title">Почему мы?</h2>
+      <ul class="services__list">
+        <li class="services__item">
+          <div class="services__item-icon">
+            <svg class="services__item-svg" width="31" height="55">
+              <use xlink:href="img/sprite.svg#icon-temperature"></use>
+            </svg>
+          </div>
+          <h2 class="services__item-title">Комфортная температура</h2>
+          <p class="services__item-text">
+            Во всех номерах поддерживается комфортная температура в пределах <br>23 - 25 градусов. В каждом номере можно дополнительно отрегулировать температуру.
+          </p>
+        </li>
+        <li class="services__item">
+          <div class="services__item-icon">
+            <svg class="services__item-svg" width="47" height="37">
+              <use xlink:href="img/sprite.svg#icon-cctv"></use>
+            </svg>
+          </div>
+          <h2 class="services__item-title">Видеонаблюдение</h2>
+          <p class="services__item-text">
+            Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем со своего смартфона или компьютера.
+          </p>
+        </li>
+        <li class="services__item">
+          <div class="services__item-icon">
+            <svg class="services__item-svg" width="51" height="31">
+              <use xlink:href="img/sprite.svg#icon-zootaxi"></use>
+            </svg>
+          </div>
+          <h2 class="services__item-title">Услуги Зоотакси</h2>
+          <p class="services__item-text">
+            Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
+          </p>
+        </li>
+        <li class="services__item">
+          <div class="services__item-icon">
+            <svg class="services__item-svg" width="53" height="35">
+              <use xlink:href="img/sprite.svg#icon-food"></use>
+            </svg>
+          </div>
+          <h2 class="services__item-title">Сбалансированное питание</h2>
+          <p class="services__item-text">
+            Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам.
+          </p>
+        </li>
+        <li class="services__item">
+          <div class="services__item-icon">
+            <svg class="services__item-svg" width="47" height="39">
+              <use xlink:href="img/sprite.svg#icon-walks"></use>
+            </svg>
+          </div>
+          <h2 class="services__item-title">Ежедневные прогулки</h2>
+          <p class="services__item-text">
+            По вашему желанию мы выгуливаем вашего питомца два раза в день на специализированной закрытой территории.
+          </p>
+        </li>
+        <li class="services__item">
+          <div class="services__item-icon">
+            <svg class="services__item-svg" width="31" height="55">
+              <use xlink:href="img/sprite.svg#icon-veterinarians"></use>
+            </svg>
+          </div>
+          <h2 class="services__item-title">Лучшие ветеринары</h2>
+          <p class="services__item-text">
+            В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section id="rooms" class="rooms">
+      <h2 class="page-title rooms__title">Номера</h2>
+      <div class="slider rooms__slider">
+        <div class="slider__slides">
+          <div class="slider__slide">
+            <img class="slider__img" src="img/rooms-slider-img-economy.jpg" alt="">
+            <div class="slider__content">
+              <h3 class="page-title slider__title">Эконом плюс</h3>
+              <ul class="slider__slide-list">
+                <li class="slider__slide-item">Площадь - 0,90 м2</li>
+                <li class="slider__slide-item">Размеры (ШхГхВ) — 90х100х180 см</li>
+                <li class="slider__slide-item">Цена за сутки: 200₽</li>
+              </ul>
+              <a class="btn slider-slide-link" href="#">
+                <span class="btn__text">Забронировать</span>
+                <svg class="btn__svg" width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-foot"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="slider__slide">
+            <img class="slider__img" src="img/rooms-slider-img-comfort.jpg" alt="">
+            <div class="slider__content">
+              <h3 class="page-title slider__title">Комфорт</h3>
+              <ul class="slider__slide-list">
+                <li class="slider__slide-item">Площадь - 1,13 м2</li>
+                <li class="slider__slide-item">Размеры (ШхГхВ) - 100х125х180 см</li>
+                <li class="slider__slide-item">Цена за сутки: 250₽</li>
+              </ul>
+              <a class="btn slider-slide-link" href="#">
+                <span class="btn__text">Забронировать</span>
+                <svg class="btn__svg" width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-foot"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="slider__slide">
+            <img class="slider__img" src="img/rooms-slider-img-suite.jpg" alt="">
+            <div class="slider__content">
+              <h3 class="page-title slider__title">Сьют</h3>
+              <ul class="slider__slide-list">
+                <li class="slider__slide-item">Площадь - 1,56 м2</li>
+                <li class="slider__slide-item">Размеры (ШхГхВ) - 125х125х180 см</li>
+                <li class="slider__slide-item">Цена за сутки: 350₽</li>
+              </ul>
+              <a class="btn slider-slide-link" href="#">
+                <span class="btn__text">Забронировать</span>
+                <svg class="btn__svg" width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-foot"></use>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="slider__dots">
+          <span class="slider__dots-item" onclick="currentSlide(1)"></span>
+          <span class="slider__dots-item" onclick="currentSlide(2)"></span>
+          <span class="slider__dots-item" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+    <section id="reviews" class="reviews">
+      <h2 class="page-title reviews__title">Отзывы</h2>
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <p class="reviews__text">
+            Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца, рассказывала, как он себя чувствует. <br>И мы и котик остались очень довольны!
+          </p>
+          <span class="reviews__name">Валерия Гришаева</span>
+          <span class="reviews__date">15 ноября, 2019</span>
+        </li>
+        <li class="reviews__item">
+          <p class="reviews__text">
+            Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.
+          </p>
+          <span class="reviews__name">Екатерина Минаева</span>
+          <span class="reviews__date">10 октября, 2019</span>
+        </li>
+        <li class="reviews__item">
+          <p class="reviews__text">
+            Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка” отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.
+          </p>
+          <span class="reviews__name">Павел Нечаев</span>
+          <span class="reviews__date">2 августа, 2019</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer id="contacts" class="page-footer">
+    <div class="container page-footer__container">
+      <div class="map page-footer__map">
+        <div class="map__contacts-info">
+          <h2 class="page-title map__main-title">Как нас найти</h2>
+          <h3 class="map__contacts-title">Адрес</h3>
+          <p class="map__contacts-text">
+            Санкт-Петербург, <br> ул Большая Конюшенная, д 19
+          </p>
+          <h3 class="map__contacts-title">Режим работы</h3>
+          <p class="map__contacts-text">
+            Ежедневно, с 9:00 до 20:00
+          </p>
+          <h3 class="map__contacts-title">Телефон</h3>
+          <p class="map__contacts-text">
+            8 (800) 333-55-99
+          </p>
+          <h3 class="map__contacts-title">E-mail</h3>
+          <p class="map__contacts-text">
+            info@cat-hotel.ru
+          </p>
+          <h3 class="map__contacts-title">Социальные сети</h3>
+          <ul class="map__contacts-social-list">
+            <li class="map__contacts-social-item">
+              <a class="map__contacts-social-link" href="https://www.facebook.com/">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="map__contacts-social-svg" width="12" height="22">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="map__contacts-social-item">
+              <a class="map__contacts-social-link" href="https://www.instagram.com/">
+                <span class="visually-hidden">Instagram</span>
+                <svg class="map__contacts-social-svg" width="21" height="21">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="map__contacts-social-item">
+              <a class="map__contacts-social-link" href="https://www.vk.com/">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="map__contacts-social-svg" width="26" height="15">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="map__interactive" id="map"></div>
+      </div>
+      <div class="page-footer__bar">
+        <div class="container">
+          <div class="page-footer__bar-wrapper">
+            <a class="logo">
+              <img class="logo__img" src="img/logo.svg" width="63" height="52" alt="Логотип сайта">
+            </a>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Почему мы?</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Номера</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Отзывы</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Как нас найти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <hr class="page-footer__line">
+          <div class="page-footer__bar-wrapper">
+            <p class="page-footer__bar-copyright">© 2019 Все права защищены</p>
+            <a class="page-footer__bar-confidentiality" href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=fcdc9923-8f87-4f28-af55-139686174cd3" type="text/javascript"></script>
+  <script src="js/ymap.js"></script>
+
+</body>
+
+</html>
