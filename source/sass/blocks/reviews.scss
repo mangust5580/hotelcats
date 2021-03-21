@@ -1,0 +1,68 @@
+.reviews {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/services-pattern.svg);
+    background-size: contain;
+    width: 349px;
+    height: 426px;
+    background-repeat: no-repeat;
+    right: -80px;
+    transform: rotate(300deg);
+  }
+
+  &__title {
+    padding: 80px 0 80px 0;
+    margin: 80px 0 0 0;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+    background: $white;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    &::before {
+      content: "“";
+      font-family: $Lato;
+      position: absolute;
+      font-size: 72px;
+      line-height: 86px;
+      color: $citric-yellow;
+    }
+  }
+
+  &__text {
+    padding: 30px 0 12px 0;
+  }
+
+  &__name {
+    color: #848484;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__date {
+    color: #848484;
+    text-align: right;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

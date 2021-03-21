@@ -1,0 +1,35 @@
+.page-footer {
+  
+  &__bar {
+    padding: 10px 0;
+  }
+  
+  &__bar-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  &__bar-copyright {
+      color: #8F8F8F;
+  }
+  
+  &__bar-confidentiality {
+    text-align: right;
+    color: #8F8F8F;
+    text-decoration: none;
+    
+    &:hover {
+      color: $black;
+    }
+    
+    &:active {
+      opacity: 0.6;
+    }
+  }
+  
+  &__line {
+    margin: 10px 0 0 0;
+  }
+}
