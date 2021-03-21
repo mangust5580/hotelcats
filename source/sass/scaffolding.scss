@@ -1,0 +1,120 @@
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Lato";
+  src: url("../fonts/lato.woff2") format("woff2"), url("../fonts/lato.woff") format("woff");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Lato";
+  src: url("../fonts/latobold.woff2") format("woff2"), url("../fonts/latobold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Rubik";
+  src: url("../fonts/rubikmedium.woff2") format("woff2"), url("../fonts/rubikmedium.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Rubik";
+  src: url("../fonts/rubikbold.woff2") format("woff2"), url("../fonts/rubikbold.woff") format("woff");
+}
+
+
+.page {
+  height: 100%;
+  scroll-behavior: smooth;
+  --scroll-behavior: smooth;
+}
+
+.page-body {
+  display: grid;
+  min-height: 100%;
+  background-color: $snow-white;
+  color: $sapphire-blue;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: $Lato;
+  line-height: 22px;
+
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.visually-hidden {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: $Rubik;
+  line-height: 43px;;
+}
+
+.btn {
+  display: flex;
+  box-sizing: border-box;
+  padding: 14px 30px;
+  max-width: 240px;
+  border: none;
+  border-radius: 25px;
+  background-color: $orange-kraiola;
+  box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+  color: $white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  justify-content: space-around;
+  align-items: center;
+
+  &__svg {
+    padding: 7px;
+    border-radius: 50%;
+    background-color: $white;
+
+    fill: $orange-kraiola;
+  }
+
+  &:hover {
+    background-color: $snow-white;
+    color: $sapphire-blue;
+
+    & .btn__svg {
+      fill: $white;
+      background-color: $orange-kraiola;
+    }
+  }
+
+  &:active {
+      opacity: 0.6;
+    }
+
+}
+
